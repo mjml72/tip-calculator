@@ -9,13 +9,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: [github](https://github.com/mjml72/tip-calculator)
+- Live Site URL: [github pages](https://mjml72.github.io/tip-calculator/)
 
 ## My process
 
@@ -40,12 +35,10 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 
 ## Author
 
-- Frontend Mentor - [@mjml72](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@mjml72](https://www.frontendmentor.io/profile/mjml72)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
