@@ -1,0 +1,240 @@
+:root {
+    
+    --strong-cyan-primary-color: hsl(172, 67%, 45%);
+
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%)
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    background-color: var(--light-grayish-cyan);
+    padding-top: 10em;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-grayish-cyan);
+}
+
+.container-bill {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50%;
+    margin: 5em auto;
+    padding: 2em;
+}
+
+.bill-calculator, .bill-result {
+    width: 48%;
+    border-radius: 10px;
+}
+
+.bill-calculator {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+label {
+    color: var(--grayish-cyan);
+    font-weight: 700;
+}
+
+.bill-container, .bill-container input {
+    width: 100%;
+}
+
+.bill-container label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    background-color: var(--very-light-grayish-cyan);
+    text-align: end;
+    border-radius: 10px;
+    padding: 0.3em;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    border: none;
+
+}
+
+input, button {
+    border-radius: 5px;
+    padding: 0.3em;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    
+}
+
+input:focus {
+   outline-color: var(--strong-cyan-primary-color);
+}
+
+.bill-container input {
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.buttons-container label {
+    width: 100%;
+}
+
+.btn-percentage, #custom {
+    width: 30%;
+}
+
+.btn-percentage {
+    background-color: var(--very-dark-cyan);
+    color: white;
+    margin-top: 0.7em;
+    cursor: pointer;
+}
+
+#custom {
+    font-size: 1.5rem;
+    margin-top: 0.7em;
+}
+
+.btn-percentage:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.btn-percentage:focus {
+    background-color: var(--strong-cyan-primary-color);
+    color: var(--very-dark-cyan);
+}
+
+.number-of-people, .number-of-people input {
+    width: 100%;
+}
+
+.number-of-people input {
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+}
+.number-of-people label {
+    width: 48%;
+    display: inline-block;
+}
+
+.demo {
+    width: 48%;
+    display: inline-block;
+    opacity: 0;
+    text-align: end;
+    color: rgb(203, 80, 80);
+}
+
+.bill-result {
+    background-color: var(--very-dark-cyan);
+    padding: 0 2em;
+    
+}
+
+.tip-container, .total-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-container div, .total-container div {
+    max-width: 30%;
+}
+
+.tip-container h2, .total-container h2 {
+    max-width: 70%;
+    text-align: end;
+    word-wrap: break-word;
+}
+.first {
+    color: white;
+    margin: 0;
+}
+
+.second {
+    color: var(--grayish-cyan);
+    margin: 0;
+}
+
+.total-numbers {
+    font-size: 2.3rem;
+    color: var(--strong-cyan-primary-color);
+}
+
+.bill-result button {
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--strong-cyan-primary-color);
+    color: var(--very-dark-cyan);
+    margin: 4em 0 1em 0;
+}
+
+.bill-result button:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .container-bill {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .bill-calculator, .bill-result {
+        width: 100%;
+    }
+
+    .bill-calculator, .bill-container,
+    .buttons-container, .number-of-people {
+        margin-bottom: 2em;
+    }
+
+    .bill-result button {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    .btn-percentage, #custom {
+        width: 48%;
+    }
+
+}
